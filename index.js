@@ -5,11 +5,13 @@
 const getFirstNames = arr => {
   const userFirstNames = [];
   for (let user of arr) {
-    // Your code goes here ...
+    userFirstNames.push(user.firstName);
   }
+  return userFirstNames;
 };
 
-getFirstNames(usersArray);
+console.log(getFirstNames(usersArray));
+// getFirstNames(usersArray);
 // expected output:
 // [ 'Kirby', 'Tracie', 'Kendra', 'Kinney', 'Howard', 'Rachelle', 'Lizzie' ]
 
@@ -19,6 +21,12 @@ getFirstNames(usersArray);
 
 const getFullNames = arr => {
   // Your code goes here ...
+
+  // 1. creo un array vacio para acumular los nombres completos
+
+  // 2. utilizo for...of para iterar por todos los objetos del array, luego pusheo el nombre y el apellido utilizando ${}
+
+  // 3. retornar la variable fullNames
 };
 
 getFullNames(usersArray);
